@@ -1,0 +1,11 @@
+@import "../../styles/colors.scss";
+
+.section {
+  &__title {
+    color: $violet;
+    font-size: 6rem;
+    font-weight: 600;
+    margin: 6.6rem 0;
+    text-align: center;
+  }
+}
