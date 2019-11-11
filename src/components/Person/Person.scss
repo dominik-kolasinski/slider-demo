@@ -1,6 +1,10 @@
 .person {
-  width: 18rem;
+  position: relative;
   margin: 4rem;
-  height: 18rem;
-  background-color: aquamarine;
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

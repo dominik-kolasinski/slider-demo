@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "../../utils/classes";
-import Person from "../Person/Person";
+import { Person } from "../Person";
 import "./Team.scss";
 
 const bem = classes("team");

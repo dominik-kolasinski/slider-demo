@@ -1,0 +1,20 @@
+@import "../../styles/colors.scss";
+
+.email {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4rem;
+  height: 4rem;
+  background-color: $violet;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+
+  &__link {
+    color: $white;
+  }
+}
