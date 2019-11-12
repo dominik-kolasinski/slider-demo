@@ -1,0 +1,83 @@
+{
+  "data": [
+    {
+      "uid": "1",
+      "firstName": "Basia",
+      "lastName": "Sołtysińska",
+      "position": "Founder",
+      "location": "Warsaw",
+      "email": "basia.soltysinska@indahash.pl"
+    },
+    {
+      "uid": "2",
+      "firstName": "Włas",
+      "lastName": "Chorowiec",
+      "position": "Founder",
+      "location": "Warsaw",
+      "email": "wlas.chorowiec@indahash.pl"
+    },
+    {
+      "uid": "3",
+      "firstName": "Edyta",
+      "lastName": "Leśniewska",
+      "position": "Head of Human Resources",
+      "location": "Warsaw",
+      "email": "edyta.lesniewska@indahash.pl"
+    },
+    {
+      "uid": "4",
+      "firstName": "Joanna",
+      "lastName": "Pawluk",
+      "position": "Chief Growth Officer (CGO)",
+      "location": "London",
+      "email": "joanna.pawluk@indahash.pl"
+    },
+    {
+      "uid": "5",
+      "firstName": "David",
+      "lastName": "Saunders",
+      "position": "Business Development",
+      "location": "London",
+      "email": "david.saunders@indahash.pl"
+    },
+    {
+      "uid": "6",
+      "firstName": "Adam",
+      "lastName": "Eldridge",
+      "position": "Business Development Director US",
+      "location": "Los Angeles",
+      "email": "adam.eldridge@indahash.pl"
+    },
+    {
+      "uid": "7",
+      "firstName": "Maha",
+      "lastName": "Mahda",
+      "position": "Chief Business Development Officer (CBDO)",
+      "location": "Warsaw"
+    },
+    {
+      "uid": "8",
+      "firstName": "Elżbieta",
+      "lastName": "Kamińska",
+      "position": "International Client Service Manager",
+      "location": "Warsaw",
+      "email": "elzbieta.kaminska@indahash.pl"
+    },
+    {
+      "uid": "9",
+      "firstName": "Karolina",
+      "lastName": "Makuch",
+      "position": "Creation Manager",
+      "location": "Warsaw",
+      "email": "karolia.makuch@indahash.pl"
+    },
+    {
+      "uid": "10",
+      "firstName": "Kamil",
+      "lastName": "Bolek",
+      "position": "Head of Communiation",
+      "location": "Warsaw",
+      "email": "kamil.bolek@indahash.pl"
+    }
+  ]
+}

@@ -4,6 +4,7 @@
   position: relative;
   width: 18rem;
   height: 18rem;
+  cursor: pointer;
 
   &:after {
     content: "";
@@ -25,5 +26,6 @@
 
   &__image {
     border-radius: 50%;
+    width: 100%;
   }
 }

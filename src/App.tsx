@@ -5,8 +5,7 @@ import Team from "./components/Team/Team";
 
 const App: React.FC = () => {
   return (
-    <div>
-      {/* <header>header</header> */}
+    <div className="app">
       <Layout>
         <Section title={"Meet our team"}>
           <Team />

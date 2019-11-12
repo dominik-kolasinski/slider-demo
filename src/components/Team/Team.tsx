@@ -1,6 +1,13 @@
 import React from "react";
-import classes from "../../utils/classes";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  setSliderVisibility,
+  setCurrentSlide
+} from "../../redux/actions/slider/slider";
+import { TeamMember } from "../../redux/types";
 import { Person } from "../Person";
+import Slider from "../Slider/Slider";
+import classes from "../../utils/classes";
 import "./Team.scss";
 
 const bem = classes("team");
@@ -9,14 +16,32 @@ interface TeamProps {
   name?: string;
 }
 
-const team = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const Team: React.FC<TeamProps> = () => {
+  const dispatch = useDispatch();
+  const teamMembers = useSelector((state: any) => state.team.data);
 
-const Team: React.FC<TeamProps> = () => (
-  <div className={bem()}>
-    {team.map(person => (
-      <Person />
-    ))}
-  </div>
-);
+  return (
+    <>
+      <div className={bem()}>
+        {teamMembers.map((teamMember: TeamMember, index: number) => (
+          <div
+            onClick={e => {
+              let temp = e.target as HTMLElement;
+              if (temp.classList.contains("avatar")) {
+                dispatch(setCurrentSlide(index));
+                dispatch(setSliderVisibility(true));
+              }
+              return;
+            }}
+            key={teamMember.uid}
+          >
+            <Person personData={teamMember} key={teamMember.uid} />
+          </div>
+        ))}
+      </div>
+      <Slider />
+    </>
+  );
+};
 
 export default Team;

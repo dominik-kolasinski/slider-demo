@@ -7,12 +7,12 @@ import "./Email.scss";
 const bem = classes("email");
 
 interface EmailProps {
-  name?: string;
+  email: string;
 }
 
-export const Email: React.FC<EmailProps> = () => (
+export const Email: React.FC<EmailProps> = ({ email }) => (
   <div className={bem()}>
-    <a href="mailto:webmaster@example.com" className={bem("link")}>
+    <a href={`mailto:${email}`} className={bem("link")}>
       <FontAwesomeIcon icon={faEnvelope} className={bem("icon")} />
     </a>
   </div>

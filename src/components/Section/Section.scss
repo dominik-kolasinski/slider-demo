@@ -1,6 +1,8 @@
 @import "../../styles/colors.scss";
 
 .section {
+  overflow: hidden;
+
   &__title {
     color: $violet;
     font-size: 6rem;

@@ -1,19 +1,22 @@
 import React from "react";
 import classes from "../../../utils/classes";
+import avatar_placeholder from "../../../assets/avatar_placeholder.svg";
 import "./Avatar.scss";
 
 const bem = classes("avatar");
 
 interface AvatarProps {
-  name?: string;
+  image?: string;
 }
 
-export const Avatar: React.FC<AvatarProps> = () => (
-  <div className={bem()}>
-    <img
-      className={bem("image")}
-      src="https://i.pravatar.cc/180"
-      alt="team member avatar"
-    ></img>
-  </div>
-);
+export const Avatar: React.FC<AvatarProps> = ({ image }) => {
+  return (
+    <div className={bem()}>
+      <img
+        className={bem("image")}
+        src={image ? image : avatar_placeholder}
+        alt="team member avatar"
+      ></img>
+    </div>
+  );
+};

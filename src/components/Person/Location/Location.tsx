@@ -5,9 +5,9 @@ import "./Location.scss";
 const bem = classes("location");
 
 interface LocationProps {
-  name?: string;
+  location: string;
 }
 
-export const Location: React.FC<LocationProps> = () => (
-  <span className={bem()}>location</span>
+export const Location: React.FC<LocationProps> = ({ location }) => (
+  <span className={bem()}>{location}</span>
 );

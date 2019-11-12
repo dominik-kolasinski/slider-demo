@@ -6,12 +6,14 @@ describe("<App />", () => {
   let wrapper: any;
 
   it("defines the component", () => {
-    wrapper = mount(<App />);
+    wrapper = shallow(<App />);
     expect(wrapper).toBeDefined();
   });
 
-  it("renders form component", () => {
-    console.log(wrapper.debug());
-    expect(wrapper.find("div").hasClass("App")).toBe(true);
+  it("renders App component", () => {
+    expect(wrapper.find("div").hasClass("app")).toBe(true);
+    expect(wrapper.find("Layout").length).toBe(1);
+    expect(wrapper.find("Section").length).toBe(1);
+    expect(wrapper.find("Team").length).toBe(1);
   });
 });

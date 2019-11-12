@@ -5,9 +5,9 @@ import "./Position.scss";
 const bem = classes("position");
 
 interface PositionProps {
-  name?: string;
+  position: string;
 }
 
-export const Position: React.FC<PositionProps> = () => (
-  <span className={bem()}>position</span>
+export const Position: React.FC<PositionProps> = ({ position }) => (
+  <span className={bem()}>{position}</span>
 );
